@@ -1,0 +1,18 @@
+<interfaceDefinition version='1.2' language='verilog' kind='module' name='cache_l2'>
+    <portList>
+
+      <port name='clk' direction='input' type='' kind=''> </port>
+      <port name='addr_hig' direction='input' type='[23:0]' kind='array' packedDimension='[23:0]'> </port>
+      <port name='data_hig' direction='inout' type='[31:0]' kind='array' packedDimension='[31:0]'> </port>
+      <port name='rw_hig' direction='input' type='' kind=''> </port>
+      <port name='ce_hig' direction='input' type='' kind=''> </port>
+      <port name='data_low_out' direction='output' type='[63:0]' kind='array' packedDimension='[63:0]'> </port>
+      <port name='data_low_in' direction='input' type='[63:0]' kind='array' packedDimension='[63:0]'> </port>
+      <port name='rw_low' direction='output' type='' kind=''> </port>
+      <port name='ce_low' direction='output' type='' kind=''> </port>
+      <port name='test' direction='output' type='' kind=''> </port>
+      <port name='snoop_sig' direction='input' type='' kind=''> </port>
+      <port name='snoop_req' direction='output' type='' kind=''> </port>
+
+    </portList>
+</interfaceDefinition>

@@ -1,0 +1,39 @@
+<interfaceDefinition version='1.2' language='verilog' kind='module' name='cache_l1'>
+    <macroList>
+
+      <macro name='WORD' initializer='2' type='' paramKind='parameter'> </macro>
+      <macro name='DEPTH' initializer='12' type='' paramKind='parameter'> </macro>
+      <macro name='SP_OLD_BLK' initializer='4&apos;b0100' type='' paramKind='parameter'> </macro>
+      <macro name='SP_NEW_BLK_RD' initializer='4&apos;b0101' type='' paramKind='parameter'> </macro>
+      <macro name='SP_NEW_BLK_WT' initializer='4&apos;b0111' type='' paramKind='parameter'> </macro>
+      <macro name='READY' initializer='4&apos;b0000' type='' paramKind='parameter'> </macro>
+      <macro name='DIRTY_WT_BCK' initializer='4&apos;b0001' type='' paramKind='parameter'> </macro>
+      <macro name='REPLACE' initializer='4&apos;b0010' type='' paramKind='parameter'> </macro>
+      <macro name='WR_TO_DIRTY' initializer='4&apos;b0011' type='' paramKind='parameter'> </macro>
+      <macro name='READ' initializer='4&apos;b0110' type='' paramKind='parameter'> </macro>
+
+    </macroList>
+    <portList>
+
+      <port name='clk' direction='input' type='' kind=''> </port>
+      <port name='reset' direction='input' type='' kind=''> </port>
+      <port name='addr_cpu' direction='input' type='[23:0]' kind='array' packedDimension='[23:0]'> </port>
+      <port name='data_cpu_in' direction='input' type='[7:0]' kind='array' packedDimension='[7:0]'> </port>
+      <port name='data_cpu_out' direction='output' type='[7:0]' kind='regvector' packedDimension='[7:0]'> </port>
+      <port name='rw_cpu' direction='input' type='' kind=''> </port>
+      <port name='ce_cpu' direction='input' type='' kind=''> </port>
+      <port name='RDY_cpu' direction='output' type='reg' kind=''> </port>
+      <port name='addr_low' direction='output' type='[23:0]' kind='regvector' packedDimension='[23:0]'> </port>
+      <port name='data_low_out' direction='output' type='[31:0]' kind='regvector' packedDimension='[31:0]'> </port>
+      <port name='data_low_in' direction='input' type='[31:0]' kind='array' packedDimension='[31:0]'> </port>
+      <port name='rw_low' direction='output' type='reg' kind=''> </port>
+      <port name='ce_low' direction='output' type='reg' kind=''> </port>
+      <port name='RDY_low' direction='input' type='' kind=''> </port>
+      <port name='pro' direction='output' type='reg' kind=''> </port>
+      <port name='addr_sp_out' direction='output' type='[23:0]' kind='regvector' packedDimension='[23:0]'> </port>
+      <port name='addr_sp_in' direction='input' type='[23:0]' kind='array' packedDimension='[23:0]'> </port>
+      <port name='snoop_sig' direction='input' type='[2:0]' kind='array' packedDimension='[2:0]'> </port>
+      <port name='snoop_req' direction='output' type='[2:0]' kind='regvector' packedDimension='[2:0]'> </port>
+
+    </portList>
+</interfaceDefinition>

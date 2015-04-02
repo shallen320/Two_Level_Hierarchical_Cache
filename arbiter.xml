@@ -1,0 +1,26 @@
+<interfaceDefinition version='1.2' language='verilog' kind='module' name='arbiter'>
+    <portList>
+
+      <port name='clk' direction='input' type='' kind=''> </port>
+      <port name='data_in_1' direction='input' type='[63:0]' kind='array' packedDimension='[63:0]'> </port>
+      <port name='data_out_1' direction='output' type='[63:0]' kind='regvector' packedDimension='[63:0]'> </port>
+      <port name='addr_1' direction='input' type='[23:0]' kind='array' packedDimension='[23:0]'> </port>
+      <port name='rw_1' direction='input' type='' kind=''> </port>
+      <port name='ce_1' direction='input' type='' kind=''> </port>
+      <port name='pro_1' direction='input' type='' kind=''> </port>
+      <port name='RDY_1' direction='output' type='reg' kind=''> </port>
+      <port name='data_in_2' direction='input' type='[63:0]' kind='array' packedDimension='[63:0]'> </port>
+      <port name='data_out_2' direction='output' type='[63:0]' kind='regvector' packedDimension='[63:0]'> </port>
+      <port name='addr_2' direction='input' type='[23:0]' kind='array' packedDimension='[23:0]'> </port>
+      <port name='rw_2' direction='input' type='' kind=''> </port>
+      <port name='ce_2' direction='input' type='' kind=''> </port>
+      <port name='pro_2' direction='input' type='' kind=''> </port>
+      <port name='RDY_2' direction='output' type='reg' kind=''> </port>
+      <port name='data_ram' direction='inout' type='[63:0]' kind='array' packedDimension='[63:0]'> </port>
+      <port name='addr_ram' direction='output' type='[23:0]' kind='regvector' packedDimension='[23:0]'> </port>
+      <port name='rd_ram' direction='output' type='reg' kind=''> </port>
+      <port name='RDY_ram' direction='input' type='' kind=''> </port>
+      <port name='wrt_ram' direction='output' type='reg' kind=''> </port>
+
+    </portList>
+</interfaceDefinition>
